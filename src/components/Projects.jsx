@@ -3,11 +3,23 @@ import { motion } from "framer-motion";
 export default function Projects() {
   const projects = [
     {
+      icon: "fas fa-pen-nib",
+      title: "AssetVerse",
+      description:
+        "AssetVerse is an asset management web application that helps organizations track company assets, manage employee requests, and monitor asset usage efficiently. It provides role-based access for HR and employees, real-time request tracking, and visual insights through an interactive dashboard.",
+      tags: ["React", "Express.js", "MongoDB", "TailwindCSS", "Firebase"],
+      links: {
+        demo: "https://assetverse-e610c.web.app/",
+        github: "https://github.com/sajid-7756/AssetVerse-Client",
+      },
+      img: "/assetVerse.png",
+    },
+    {
       icon: "fas fa-seedling",
       title: "CleanHub",
       description:
         "CleanHub is a community app that helps people report, track, and fix local environmental problems. It shows community stats, allows easy issue reporting, and encourages volunteering for clean-up drives.",
-      tags: ["React", "TailwindCSS", "DaisyUI", "MongoDB"],
+      tags: ["React", "Express.js", "TailwindCSS", "DaisyUI", "MongoDB"],
       links: {
         demo: "https://a10-b11-issuereport-4c3a42.netlify.app/",
         github:
@@ -20,7 +32,7 @@ export default function Projects() {
       title: "PetCare",
       description:
         "PetCare is a friendly web app for pet lovers to explore services, get tips, and connect with expert vets. Users can securely sign in, manage their profile, and enjoy a smooth, responsive experience on any device.",
-      tags: ["React", "Firebase", "TailwindCSS", "DaisyUI"],
+      tags: ["React", "Express.js", "Firebase", "TailwindCSS", "DaisyUI"],
       links: {
         demo: "https://ph-a09-winte-pet-care.netlify.app/",
         github: "https://github.com/sajid-7756/Pet-Care",
@@ -32,7 +44,7 @@ export default function Projects() {
       title: "WriteFlow",
       description:
         "WriteFlow is an easy-to-use blogging platform where anyone can create, read, and manage blog posts. It has a clean design, supports images and categories, and keeps user accounts safe with secure login.",
-      tags: ["Next.js", "MongoDB", "TailwindCSS", "NextAuth"],
+      tags: ["Next.js", "Express.js", "MongoDB", "TailwindCSS", "NextAuth"],
       links: {
         demo: "https://write-flow-three.vercel.app/",
         github: "https://github.com/sajid-7756/Write-Flow",
