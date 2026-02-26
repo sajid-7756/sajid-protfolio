@@ -8,7 +8,6 @@ import {
   FaGitAlt,
   FaGithub,
   FaNpm,
-  FaDatabase,
   FaLinux,
 } from "react-icons/fa";
 
@@ -22,8 +21,15 @@ import {
   SiMongodb
 } from "react-icons/si";
 
+import { IconType } from "react-icons";
+
+interface Skill {
+  icon: IconType;
+  name: string;
+}
+
 export default function Skills() {
-const skills = [
+const skills: Skill[] = [
   { icon: FaReact, name: "React" },
   { icon: FaJs, name: "JavaScript" },
   { icon: FaNodeJs, name: "Node.js" },
@@ -67,27 +73,34 @@ const skills = [
 
         {/* Marquee Section */}
         <motion.div
-          className="relative w-full overflow-hidden bg-linear-to-r from-gray-900 via-gray-800 to-gray-900 rounded-xl py-8 border border-gray-700 shadow-lg"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
+          className="relative w-full overflow-hidden bg-linear-to-r from-gray-900 via-gray-800/50 to-gray-900 rounded-2xl py-12 border border-gray-700/50 shadow-2xl"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="marquee-track flex gap-10">
+          <div className="marquee-track flex gap-12 items-center">
             {infiniteSkills.map((skill, idx) => {
               const IconComponent = skill.icon;
               return (
-                <div
+                <motion.div
                   key={idx}
-                  className="flex flex-col items-center gap-2 min-w-max group cursor-pointer"
+                  className="flex flex-col items-center gap-4 min-w-[120px] group cursor-pointer"
+                  whileHover={{ y: -5 }}
                 >
-                  <div className="text-5xl text-accent transition-transform duration-300 group-hover:scale-110 group-hover:text-cyan-400">
+                  <motion.div 
+                    className="relative text-5xl text-gray-400 transition-colors duration-300 group-hover:text-accent"
+                    whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
                     <IconComponent />
-                  </div>
-                  <span className="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {/* Subtle glow behind icon on hover */}
+                    <div className="absolute inset-0 bg-accent/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+                  </motion.div>
+                  <span className="text-xs font-medium text-gray-400 group-hover:text-white group-hover:scale-110 transition-all duration-300 uppercase tracking-widest">
                     {skill.name}
                   </span>
-                </div>
+                </motion.div>
               );
             })}
           </div>

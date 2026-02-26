@@ -3,8 +3,8 @@ import { useState } from "react";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const scrollToSection = (sectionId) => {
-    const element = document.querySelector(sectionId);
+  const scrollToSection = (sectionId: string) => {
+    const element = document.querySelector(sectionId) as HTMLElement;
     if (element) {
       window.scrollTo({
         top: element.offsetTop - 80,
