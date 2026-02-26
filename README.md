@@ -1,123 +1,122 @@
-# SAJID - Portfolio Website
+# SAJID | Professional Full Stack Developer
 
-A modern, animated portfolio website built with React, showcasing projects, skills, and experience.
+A premium, high-performance portfolio website built with **TypeScript**, **React**, and **Tailwind CSS**. This repository showcases my technical expertise and the professional services I offer to help businesses and individuals build scalable web solutions.
 
-## 🌟 Features
+---
 
-- **Modern Design** - Clean, professional UI with dark theme
-- **Smooth Animations** - Framer Motion for entrance animations and scroll effects
-- **Particle Background** - React tsparticles for dynamic hero section
-- **Custom Cursor** - Animated gradient cursor that responds to interactions
-- **Responsive Layout** - Mobile-friendly design for all devices
-- **Project Showcase** - Display projects with images and live demo links
-- **Skills Marquee** - Infinite scrolling skill icons
-- **Optimized Performance** - Fast load times with Vite bundler
+## 🚀 Services Offered
+
+I specialize in building robust, user-centric web applications using the MERN stack. Here are the core services I provide:
+
+- **Custom Web Application Development**  
+  End-to-end development of scalable web applications using React, Node.js, and MongoDB.
+- **Frontend Architecture & UI/UX Implementation**  
+  Creating stunning, responsive, and accessible user interfaces with modern frameworks like Tailwind CSS and Framer Motion.
+- **Backend & API Development**  
+  Designing efficient RESTful APIs and secure backend infrastructures.
+- **TypeScript Migration & Type-Safe Code**  
+  Converting legacy JavaScript projects to TypeScript to ensure maintainability and reduce bugs.
+- **Performance Optimization**  
+  Enhancing web performance, SEO, and user experience through clean code and efficient architecture.
+
+---
+
+## 🌟 Key Features of this Portfolio
+
+- **Type-Safe Architecture** - Fully migrated to TypeScript for maximum reliability.
+- **Modern Design System** - Professional UI with a dark-themed, premium aesthetic.
+- **Fluid Animations** - Powered by Framer Motion for a seamless user experience.
+- **Dynamic Interactions** - Particle backgrounds and animated cursors for engagement.
+- **Fully Responsive** - Optimized for every screen size, from mobile to ultra-wide displays.
+- **Fast Performance** - Built with Vite for lightning-fast load times and HMR.
+
+---
 
 ## 🛠 Tech Stack
 
-**Frontend:**
-- React.js
-- Vite
-- Tailwind CSS
-- Framer Motion
-- React Icons
-- React tsparticles
+### Frontend
+- **Language:** TypeScript
+- **Framework:** React.js (v19)
+- **Styling:** Tailwind CSS (v4)
+- **Animations:** Framer Motion
+- **Icons:** React Icons & FontAwesome
 
-**Development:**
-- ESLint
-- JavaScript ES6+
+### Backend (MERN Expertise)
+- **Runtime:** Node.js
+- **Framework:** Express.js
+- **Database:** MongoDB
+- **Authentication:** Firebase / Custom JWT
 
-## 📋 Project Structure
+### Deployment & Tools
+- **Build Tool:** Vite
+- **Package Manager:** npm / bun
+- **Version Control:** Git
+
+---
+
+## 📋 Project Structure (TypeScript)
 
 ```
 src/
 ├── components/
-│   ├── Header.jsx
-│   ├── Hero.jsx
-│   ├── About.jsx
-│   ├── Skills.jsx
-│   ├── Projects.jsx
-│   ├── Contact.jsx
-│   ├── Footer.jsx
-│   └── CustomCursor.jsx
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Skills.tsx
+│   ├── Projects.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
 ├── assets/
-├── App.jsx
+├── App.tsx
 ├── index.css
-└── main.jsx
+└── main.tsx
 ```
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/sajid-7756/sajid-protfolio.git
-cd sajid-protfolio
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-4. Build for production:
-```bash
-npm run build
-```
-
-## 📦 Key Dependencies
-
-- `react` - UI library
-- `framer-motion` - Animation library
-- `react-tsparticles` - Particle effects
-- `tsparticles-slim` - Lightweight particle engine
-- `react-icons` - Icon library
-- `tailwindcss` - Utility-first CSS framework
-
-## 🎨 Customization
-
-### Colors
-Edit `tailwind.config.js` to customize the color scheme.
-
-### Sections
-- Modify component files in `src/components/` to add or change sections
-- Update content in each component to personalize your portfolio
-
-### Animations
-- Adjust Framer Motion `transition` properties for animation speed
-- Modify particle settings in `Hero.jsx` for different effects
-
-## 📱 Responsive Design
-
-The portfolio is fully responsive and works on:
-- Desktop (1920px and above)
-- Tablet (768px - 1024px)
-- Mobile (320px - 768px)
-
-## 🔗 Links
-
-- **GitHub**: [sajid-7756](https://github.com/sajid-7756)
-- **LinkedIn**: [sajidos](https://www.linkedin.com/in/sajidos/)
-- **Email**: devsajid56@gmail.com
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 🤝 Contributing
-
-Feel free to fork this project and submit pull requests for any improvements.
 
 ---
 
-Built with ❤️ by SAJID
+## 🏁 Getting Started
+
+### Prerequisites
+- **Node.js** (v18 or higher)
+- **Package Manager** (npm, yarn, or bun)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/sajid-7756/sajid-protfolio.git
+   cd sajid-protfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Development Mode:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Production Build:**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## � Let's Work Together!
+
+If you're looking for a dedicated developer to bring your ideas to life, feel free to reach out. I'm currently open to freelance opportunities and professional collaborations.
+
+- **GitHub**: [sajid-7756](https://github.com/sajid-7756)
+- **LinkedIn**: [sajidos](https://www.linkedin.com/in/sajidos/)
+- **Email**: [devsajid56@gmail.com](mailto:devsajid56@gmail.com)
+
+---
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+Built with 💻 and ☕ by **SAJID**
